@@ -1,0 +1,96 @@
+HillClimbing Algorithm testing:
+
+
+input:
+4
+****
+****
+****
+****
+
+Reason: edge case where there are no default values in the board
+
+Expected outcome: There are many possible solutions in this case. 
+Running several times should produce different solutions.
+One possible solution could be 
+1   2   3   4
+3   4   1   2
+2   1   4   3
+4   3   2   1
+
+
+input:
+1234
+3412
+2143
+4321
+
+Reason: Edge case where all values are filled in. The algorithm will recognize the initial state is a solution
+and will return the initial state as the final solution
+
+Expected outcome:
+1   2   3   4
+3   4   1   2
+2   1   4   3
+4   3   2   1
+
+
+input:
+1234
+3412
+21*3
+4321
+
+Reason: edge case where only one value is not permanent. Should be found in just one iteration.
+
+Expected outcome 
+1   2   3   4
+3   4   1   2
+2   1   4   3
+4   3   2   1
+
+
+input:
+24**
+*3**
+**4*
+**31
+
+Reason: routine case #1
+
+Expected outcome:
+2   4   1   3
+1   3   2   4
+3   1   4   2
+4   2   3   1
+
+
+input:
+**1*
+4***
+***2
+*3**
+
+Reason: routine case #2 with fewer default values
+
+Expected outcome:
+
+3   2   1   4
+4   1   2   3
+1   4   3   2
+2   3   4   1
+
+
+input:
+2***
+*1*2
+**3*
+***4
+
+Reason: routine case #3
+
+Expecetd outcome:
+2   4   1   3
+3   1   4   2
+4   2   3   1
+1   3   2   4
